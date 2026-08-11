@@ -139,6 +139,12 @@
     0%, 100% { opacity: 1; }
     50% { opacity: 0.4; }
   }
+  .hero-top {
+    display: flex;
+    align-items: center;
+    gap: clamp(16px, 3vw, 28px);
+    flex-wrap: wrap;
+  }
   h1.name {
     font-family: var(--font-display);
     font-weight: 600;
@@ -146,6 +152,14 @@
     line-height: 1.04;
     letter-spacing: -0.025em;
     color: var(--text);
+  }
+  .avatar {
+    width: clamp(56px, 7vw, 84px);
+    height: clamp(56px, 7vw, 84px);
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--shadow-card);
+    flex-shrink: 0;
   }
   .typeline {
     font-family: var(--font-mono);
@@ -322,6 +336,7 @@
   }
   .shot {
     width: 100%;
+    height: auto;
     aspect-ratio: 1170 / 2532;
     object-fit: cover;
     border-radius: 26px;
@@ -462,7 +477,10 @@
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow"><span class="dot"></span> OPEN TO PART-TIME &amp; CONTRACT WORK, SUMMER '27 INTERNSHIPS</div>
-    <h1 class="name">Nick Soter</h1>
+    <div class="hero-top">
+      <h1 class="name">Nick Soter</h1>
+      <img class="avatar" src="assets/headshot.jpg" alt="Nick Soter">
+    </div>
     <div class="typeline"><span id="typeline-text"></span><span class="cursor"></span></div>
     <p class="hero-desc">I build full products end to end — web apps, iOS apps, and the AI layered into both. Recent work spans a marketing ops platform for a national brand, an on-device voice assistant running a local LLM with no cloud calls, and a family-safe browser with its own LLC behind it.</p>
     <div class="hero-links">
@@ -492,9 +510,9 @@
         </div>
         <a class="card-link" href="https://www.purusai.com" target="_blank" rel="noopener">purusai.com →</a>
         <div class="shots">
-          <div class="shot-frame"><img class="shot" src="assets/purus-home.jpg" alt="Purus browser home screen with search bar" loading="lazy" width="1170" height="2532"></div>
-          <div class="shot-frame"><img class="shot" src="assets/purus-filter.jpg" alt="Purus filtering a search result in real time, shown blurred" loading="lazy" width="1170" height="2532"></div>
-          <div class="shot-frame"><img class="shot" src="assets/purus-blocked.jpg" alt="Purus blocking a site that doesn't meet browsing standards" loading="lazy" width="1170" height="2532"></div>
+          <div class="shot-frame"><img class="shot" src="assets/purus-home.jpg" alt="Purus browser home screen with search bar" loading="lazy"></div>
+          <div class="shot-frame"><img class="shot" src="assets/purus-filter.jpg" alt="Purus filtering a search result in real time, shown blurred" loading="lazy"></div>
+          <div class="shot-frame"><img class="shot" src="assets/purus-blocked.jpg" alt="Purus blocking a site that doesn't meet browsing standards" loading="lazy"></div>
         </div>
       </div>
 
@@ -512,8 +530,8 @@
           <span class="tag">AVSpeechSynthesizer</span>
         </div>
         <div class="shots">
-          <div class="shot-frame"><img class="shot" src="assets/otto-listening.jpg" alt="Otto listening for its wake word" loading="lazy" width="1170" height="2532"></div>
-          <div class="shot-frame"><img class="shot" src="assets/otto-chat.jpg" alt="Otto mid-conversation with a spoken reply" loading="lazy" width="1170" height="2532"></div>
+          <div class="shot-frame"><img class="shot" src="assets/otto-listening.jpg" alt="Otto listening for its wake word" loading="lazy"></div>
+          <div class="shot-frame"><img class="shot" src="assets/otto-chat.jpg" alt="Otto mid-conversation with a spoken reply" loading="lazy"></div>
         </div>
       </div>
 
@@ -529,9 +547,9 @@
           <span class="tag">LLM recommendation engine</span>
         </div>
         <div class="shots shots-scroll">
-          <div class="shot-frame"><img class="shot" src="assets/elsewhere-foryou.jpg" alt="Elsewhere For You tab with a matched destination card" loading="lazy" width="1170" height="2532"></div>
-          <div class="shot-frame"><img class="shot" src="assets/elsewhere-discover.jpg" alt="Elsewhere Discover tab with a grid of destinations" loading="lazy" width="1170" height="2532"></div>
-          <div class="shot-frame"><img class="shot" src="assets/elsewhere-profile.jpg" alt="Elsewhere profile screen with travel preferences" loading="lazy" width="1170" height="2532"></div>
+          <div class="shot-frame"><img class="shot" src="assets/elsewhere-foryou.jpg" alt="Elsewhere For You tab with a matched destination card" loading="lazy"></div>
+          <div class="shot-frame"><img class="shot" src="assets/elsewhere-discover.jpg" alt="Elsewhere Discover tab with a grid of destinations" loading="lazy"></div>
+          <div class="shot-frame"><img class="shot" src="assets/elsewhere-profile.jpg" alt="Elsewhere profile screen with travel preferences" loading="lazy"></div>
         </div>
       </div>
 
