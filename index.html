@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nick Soter — Full-stack &amp; AI product developer</title>
+<title>Nick Soter — AI product builder</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
@@ -332,8 +332,8 @@
   }
 
   @media (max-width: 640px) {
-    .shots:not(.shots-scroll) { flex-direction: column; align-items: center; }
-    .shots:not(.shots-scroll) .shot-frame { width: 62vw; max-width: 240px; }
+    .shots { flex-direction: column; align-items: center; }
+    .shots .shot-frame { width: 62vw; max-width: 240px; }
   }
 
   /* ---------- experience ---------- */
@@ -458,9 +458,9 @@
   <div class="wrap">
     <div class="nav-mark">nick<span>.</span>soter</div>
     <ul class="nav-links">
-      <li><a href="#work"><span class="num">01</span> Work</a></li>
-      <li><a href="#experience"><span class="num">02</span> Experience</a></li>
-      <li><a href="#stack"><span class="num">03</span> Stack</a></li>
+      <li><a href="#experience"><span class="num">01</span> Experience</a></li>
+      <li><a href="#work"><span class="num">02</span> Work</a></li>
+      <li><a href="#stack"><span class="num">03</span> Built with</a></li>
       <li><a href="#contact"><span class="num">04</span> Contact</a></li>
     </ul>
   </div>
@@ -473,7 +473,8 @@
       <img class="avatar" src="assets/headshot.jpg" alt="Nick Soter">
     </div>
     <div class="typeline"><span id="typeline-text"></span><span class="cursor"></span></div>
-    <p class="hero-desc">I build production software for companies at scale — full products end to end, from the interface down to the database. Recent work spans a marketing ops platform live for a national brand, an on-device voice assistant running a local LLM with zero cloud calls, and a family-safe browser shipped under its own LLC — each backed by schema design, auth, and realtime data infrastructure I build and own myself.</p>
+    <p class="hero-desc">I build full products end to end — from the interface down to the database. Recent work includes Social Buzz, a marketing operations platform live for a national brand; Purus, a family-safe iOS browser shipped under its own LLC; and Otto, an on-device voice assistant running a local LLM.</p>
+    <p class="hero-desc">I define the product, make the design and scoping decisions, and build with AI coding tools like Claude Code.</p>
     <div class="hero-links">
       <a class="btn primary" href="mailto:nicholastsoter@gmail.com">Email me</a>
       <a class="btn" href="https://www.linkedin.com/in/nick-soter-8821b0202" target="_blank" rel="noopener">LinkedIn ↗</a>
@@ -483,37 +484,46 @@
   </div>
 </header>
 
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="idx">01</span><h2>Experience</h2></div>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-date">Jul 2026 — Present</div>
+        <div>
+          <div class="tl-role">Contract Full-Stack Developer</div>
+          <div class="tl-org">Coral (Inventure LLC)</div>
+          <p class="tl-body">Outside developer on Social Buzz, an internal marketing operations platform for a national toothpaste brand. Built the React + Vite front end and Supabase auth/realtime integration using AI-assisted development, and integrated OpenAI into the content workflow across six product areas.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">2026</div>
+        <div>
+          <div class="tl-role">Freelance Web Developer</div>
+          <div class="tl-org">Independent clients</div>
+          <p class="tl-body">Built a React + Vite + Supabase site for a wholesale real estate business, and a landing page for Stapa, an outdoor gear company, using AI-assisted development.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">Mar 2025 — Present</div>
+        <div>
+          <div class="tl-role">Founder &amp; Developer</div>
+          <div class="tl-org">Purus</div>
+          <p class="tl-body">Founded a family-safe iOS browser and directed its development solo using AI coding tools, shipping it under its own LLC — WKWebView content filtering, Cloudflare for Families integration, Supabase backend, and App Store distribution.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section id="work">
   <div class="wrap">
-    <div class="section-head reveal"><span class="idx">01</span><h2>What I'm building</h2></div>
+    <div class="section-head reveal"><span class="idx">02</span><h2>What I'm building</h2></div>
     <div class="cards">
-
-      <div class="card reveal">
-        <div class="card-top">
-          <div class="card-title-row"><h3>Stapa</h3></div>
-          <span class="status live">LIVE · CLIENT WORK</span>
-        </div>
-        <p class="desc">A landing page for an outdoor gear company, built with React and Vite.</p>
-        <div class="tags">
-          <span class="tag">React</span>
-          <span class="tag">Vite</span>
-        </div>
-        <a class="card-link" href="https://stapa-landing.vercel.app/" target="_blank" rel="noopener">stapa-landing.vercel.app →</a>
-      </div>
-
-      <div class="card reveal">
-        <div class="card-top">
-          <div class="card-title-row"><h3>Swift Relief Home Buyers</h3></div>
-          <span class="status live">LIVE · CLIENT WORK</span>
-        </div>
-        <p class="desc">A React + Vite + Supabase site built for a wholesale real estate business.</p>
-        <div class="tags">
-          <span class="tag">React</span>
-          <span class="tag">Vite</span>
-          <span class="tag">Supabase</span>
-        </div>
-        <a class="card-link" href="https://swift-relief-site-two.vercel.app/" target="_blank" rel="noopener">swift-relief-site-two.vercel.app →</a>
-      </div>
 
       <div class="card reveal">
         <div class="card-top">
@@ -537,8 +547,35 @@
 
       <div class="card reveal">
         <div class="card-top">
+          <div class="card-title-row"><h3>Stapa</h3></div>
+          <span class="status live">LIVE · CLIENT WORK</span>
+        </div>
+        <p class="desc">A landing page for an outdoor gear company, built with React and Vite.</p>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Vite</span>
+        </div>
+        <a class="card-link" href="https://stapagear.com/" target="_blank" rel="noopener">stapagear.com →</a>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-top">
+          <div class="card-title-row"><h3>Swift Relief Home Buyers</h3></div>
+          <span class="status live">LIVE · CLIENT WORK</span>
+        </div>
+        <p class="desc">A React + Vite + Supabase site built for a wholesale real estate business.</p>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Vite</span>
+          <span class="tag">Supabase</span>
+        </div>
+        <a class="card-link" href="https://swift-relief-site-two.vercel.app/" target="_blank" rel="noopener">swift-relief-site-two.vercel.app →</a>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-top">
           <div class="card-title-row"><h3>Otto</h3></div>
-          <span class="status solo">SOLO · ON-DEVICE</span>
+          <span class="status solo">PROTOTYPE · ON-DEVICE</span>
         </div>
         <p class="desc">An AI voice assistant for iPhone that runs entirely on-device — no cloud API calls. Say "Otto" and it listens, transcribes, thinks, and speaks back in real time, powered by a local LLM.</p>
         <div class="tags">
@@ -557,7 +594,7 @@
       <div class="card reveal">
         <div class="card-top">
           <div class="card-title-row"><h3>Elsewhere</h3></div>
-          <span class="status solo">SOLO · IN PROGRESS</span>
+          <span class="status solo">PROTOTYPE</span>
         </div>
         <p class="desc">A travel discovery app that learns a traveler's taste and matches them against real destinations with a percentage score, then builds out a bucket list from there.</p>
         <div class="tags">
@@ -576,65 +613,25 @@
   </div>
 </section>
 
-<section id="experience">
-  <div class="wrap">
-    <div class="section-head reveal"><span class="idx">02</span><h2>Experience</h2></div>
-    <div class="timeline">
-
-      <div class="tl-item reveal">
-        <div class="tl-date">Jul 2026 — Present</div>
-        <div>
-          <div class="tl-role">Contract Full-Stack Developer</div>
-          <div class="tl-org">Coral (Inventure LLC)</div>
-          <p class="tl-body">Outside developer on Social Buzz, an internal marketing operations platform for a national toothpaste brand. Built the React + Vite front end, wired up Supabase auth and realtime sync, and integrated OpenAI into the content workflow across six product areas.</p>
-        </div>
-      </div>
-
-      <div class="tl-item reveal">
-        <div class="tl-date">2026</div>
-        <div>
-          <div class="tl-role">Freelance Web Developer</div>
-          <div class="tl-org">Independent clients</div>
-          <p class="tl-body">Built a React + Vite + Supabase site for a wholesale real estate business, and a landing page for Stapa, an outdoor gear company.</p>
-        </div>
-      </div>
-
-      <div class="tl-item reveal">
-        <div class="tl-date">Mar 2025 — Present</div>
-        <div>
-          <div class="tl-role">Founder &amp; Developer</div>
-          <div class="tl-org">Purus</div>
-          <p class="tl-body">Founded and built a family-safe iOS browser solo, shipping it under its own LLC. Own the full stack — WKWebView content filtering, Cloudflare for Families integration, Supabase backend, and App Store distribution.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <section id="stack">
   <div class="wrap">
-    <div class="section-head reveal"><span class="idx">03</span><h2>Stack</h2></div>
+    <div class="section-head reveal"><span class="idx">03</span><h2>Built with</h2></div>
     <div class="stack-grid reveal">
       <div class="stack-item">
-        <h3>Languages</h3>
-        <p>JavaScript, TypeScript, Swift</p>
-      </div>
-      <div class="stack-item">
         <h3>Web</h3>
-        <p>React, Vite, Tailwind CSS, Zustand</p>
+        <p>JavaScript, TypeScript, React, Vite</p>
       </div>
       <div class="stack-item">
         <h3>iOS</h3>
-        <p>SwiftUI, Speech / AVFoundation, MLX</p>
+        <p>Swift, SwiftUI, Speech / AVFoundation, MLX Swift</p>
       </div>
       <div class="stack-item">
         <h3>Backend</h3>
-        <p>Supabase (Auth, Realtime, Edge Functions), Netlify functions</p>
+        <p>Supabase (Auth, Realtime)</p>
       </div>
       <div class="stack-item">
         <h3>AI</h3>
-        <p>OpenAI &amp; Claude API integration, on-device LLM inference, CoreML</p>
+        <p>OpenAI integration, on-device LLM inference</p>
       </div>
       <div class="stack-item">
         <h3>Tools</h3>
@@ -651,9 +648,9 @@
       <div class="edu-item">
         <div>
           <div class="edu-name">Brigham Young University</div>
-          <div class="edu-sub">B.S., Information Systems — in progress</div>
+          <div class="edu-sub">Information Systems prerequisites, applying to the program</div>
         </div>
-        <div class="edu-date">Winter 2026 — Expected 2029</div>
+        <div class="edu-date">Winter 2026 — Expected Winter 2029</div>
       </div>
       <div class="edu-item">
         <div>
@@ -668,7 +665,7 @@
 
 <footer id="contact">
   <div class="wrap">
-    <h2 class="reveal">Looking for a developer who ships? Let's talk.</h2>
+    <h2 class="reveal">Looking for a product builder who ships? Let's talk.</h2>
     <div class="foot-links reveal">
       <a href="mailto:nicholastsoter@gmail.com">nicholastsoter@gmail.com</a>
       <a href="https://github.com/nicholastsoter" target="_blank" rel="noopener">github.com/nicholastsoter</a>
@@ -681,8 +678,8 @@
 <script>
   // typewriter rotating roles
   const roles = [
-    "full-stack developer",
-    "ships AI-integrated products",
+    "AI product builder",
+    "directs AI coding tools",
     "builds on-device AI",
     "React · Swift · Supabase"
   ];
