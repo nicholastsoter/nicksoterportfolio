@@ -330,6 +330,9 @@
     transform: translateY(-4px) scale(1.02);
     box-shadow: 0 18px 40px rgba(0,0,0,0.2);
   }
+  .shots.shots-wide { flex-direction: column; align-items: stretch; }
+  .shots.shots-wide .shot-frame { width: 100%; max-width: none; }
+  .shot.shot-wide { aspect-ratio: auto; border-radius: 16px; }
 
   @media (max-width: 640px) {
     .shots { flex-direction: column; align-items: center; }
@@ -499,20 +502,20 @@
       </div>
 
       <div class="tl-item reveal">
-        <div class="tl-date">2026</div>
-        <div>
-          <div class="tl-role">Freelance Web Developer</div>
-          <div class="tl-org">Independent clients</div>
-          <p class="tl-body">Built a React + Vite + Supabase site for a wholesale real estate business, and a landing page for Stapa, an outdoor gear company, using AI-assisted development.</p>
-        </div>
-      </div>
-
-      <div class="tl-item reveal">
         <div class="tl-date">Mar 2025 — Present</div>
         <div>
           <div class="tl-role">Founder &amp; Developer</div>
           <div class="tl-org">Purus</div>
           <p class="tl-body">Founded a family-safe iOS browser and directed its development solo using AI coding tools, shipping it under its own LLC — WKWebView content filtering, Cloudflare for Families integration, Supabase backend, and App Store distribution.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">2026</div>
+        <div>
+          <div class="tl-role">Freelance Web Developer</div>
+          <div class="tl-org">Independent clients</div>
+          <p class="tl-body">Built a React + Vite + Supabase site for a wholesale real estate business, and a landing page for Stapa, an outdoor gear company, using AI-assisted development.</p>
         </div>
       </div>
 
@@ -527,7 +530,7 @@
 
       <div class="card reveal">
         <div class="card-top">
-          <div class="card-title-row"><h3>Purus</h3></div>
+          <div class="card-title-row"><h3>Purus (patent-pending)</h3></div>
           <span class="status live">LIVE · OWN LLC</span>
         </div>
         <p class="desc">A family-safe iOS browser, built solo in three months and shipped under its own company. Layered DNS filtering blocks unwanted content directly in the browsing layer — no accounts, no VPN required.</p>
@@ -542,6 +545,19 @@
           <div class="shot-frame"><img class="shot" src="assets/purus-home.jpg" alt="Purus browser home screen with search bar" loading="lazy"></div>
           <div class="shot-frame"><img class="shot" src="assets/purus-filter.jpg" alt="Purus filtering a search result in real time, shown blurred" loading="lazy"></div>
           <div class="shot-frame"><img class="shot" src="assets/purus-blocked.jpg" alt="Purus blocking a site that doesn't meet browsing standards" loading="lazy"></div>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-top">
+          <div class="card-title-row"><h3>To The Stars</h3></div>
+          <span class="status live">LIVE</span>
+        </div>
+        <p class="desc">A customer feedback platform that helps businesses grow their Google reviews and hear about problems first. Businesses ask for feedback by text message, email, or QR code, and every customer gets the Google review link. Unhappy customers can share private feedback with the owner, so issues get resolved directly instead of in public reviews.</p>
+        <a class="card-link" href="https://to-the-stars-ratings.com/" target="_blank" rel="noopener">to-the-stars-ratings.com →</a>
+        <div class="shots shots-wide">
+          <div class="shot-frame"><img class="shot shot-wide" src="assets/tothestars-landing.jpg" alt="To The Stars landing page: ask every customer for a review, hear about the bad day before Google does" loading="lazy"></div>
+          <div class="shot-frame"><img class="shot shot-wide" src="assets/tothestars-dashboard.jpg" alt="To The Stars business dashboard showing ratings collected, average rating, and a feedback inbox" loading="lazy"></div>
         </div>
       </div>
 
